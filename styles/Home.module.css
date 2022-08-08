@@ -50,6 +50,10 @@
   text-align: center;
 }
 
+.navbar {
+  display: inline-flex;
+}
+
 .description {
   margin: 4rem 0;
   line-height: 1.5;
