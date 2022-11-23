@@ -11,62 +11,39 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <div className={styles.header}>
         <h1 className={styles.title}>
-          Out of Step UK
+            Out of Step UK
         </h1>
         <h3>
-          Alternative Music and Lifestyle
+            News and blog
         </h3>
+    </div>
 
-        <nav>
-          <ul>
-            <li className={styles.navbar}>
-              <a href='news'>News</a>
+      <div className=''>
+          <nav>
+          <ul className='flex flex-row justify-evenly bg-black font-bold text-white'>
+            <li className='hover:text-gray-400'>
+              <a className={styles.navlink} href='latestissue'>Latest Issue</a>
             </li>
-            <li className={styles.navbar}>
-              <a href='reviews'>Reviews</a>
+            <li className='hover:text-gray-400'>
+              <a className={styles.navlink} href='news'>News</a>
             </li>
-            <li className={styles.navbar}>
-              <a href='interviews'>Interviews</a>
+            <li className='hover:text-gray-400'>
+              <a className={styles.navlink} href='reviews'>Reviews</a>
+            </li>
+            <li className='hover:text-gray-400'>
+              <a className={styles.navlink} href='interviews'>Interviews</a>
             </li>
           </ul>
-        </nav>
+          </nav>
+      </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <main className={styles.main}>
+        <card className='w-30 h-30 m-5'>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </card>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>
