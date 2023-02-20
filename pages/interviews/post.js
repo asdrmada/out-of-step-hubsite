@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-function reviews() {
-    return (
+function interviewsPost() {
+    return(
         <div className={styles.container}>
         <Head>
            <title>Out of Step UK</title>
@@ -22,22 +22,31 @@ function reviews() {
          
         <div className=''>
           <nav>
-          <ul className='flex flex-row bg-black font-bold text-white'>
-            <li className={styles.navbar}>
-              <a className={styles.navlink} href='latestissue'>Latest Issue</a>
+          <ul className='flex flex-row justify-evenly bg-black font-bold text-white'>
+            <li className='hover:text-gray-400'>
+              <a className={styles.navlink} href='../latestissue'>Latest Issue</a>
             </li>
-            <li className={styles.navbar}>
-              <a className={styles.navlink} href='news'>News</a>
+            <li className='hover:text-gray-400'>
+              <a className={styles.navlink} href='../news'>News</a>
             </li>
-            <li className={styles.navbar}>
-              <a className={styles.navlink} href='reviews'>Reviews</a>
+            <li className='hover:text-gray-400'>
+              <a className={styles.navlink} href='../reviews'>Reviews</a>
             </li>
-            <li className={styles.navbar}>
-              <a className={styles.navlink} href='interviews'>Interviews</a>
+            <li className='hover:text-gray-400'>
+              <a className={styles.navlink} href='../interviews'>Interviews</a>
             </li>
           </ul>
           </nav>
       </div>
+
+      <main>
+        <div className=''>
+            <h1>Post Title</h1>
+
+            <h4>Opening paragraph</h4>
+
+        </div>
+      </main>
    
          <footer className={styles.footer}>
            <a
@@ -52,7 +61,7 @@ function reviews() {
            </a>
          </footer>
        </div> 
-    )  
+    )
 }
 
-export  default reviews
+export default interviewsPost

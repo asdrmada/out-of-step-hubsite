@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
 function news() {
     return (
@@ -22,17 +22,17 @@ function news() {
 
     <div className=''>
           <nav>
-          <ul className='flex flex-row bg-black font-bold text-white'>
-            <li className={styles.navbar}>
+          <ul className='flex flex-row justify-evenly bg-black font-bold text-white'>
+            <li className='hover:text-gray-400'>
               <a className={styles.navlink} href='latestissue'>Latest Issue</a>
             </li>
-            <li className={styles.navbar}>
+            <li className='hover:text-gray-400'>
               <a className={styles.navlink} href='news'>News</a>
             </li>
-            <li className={styles.navbar}>
+            <li className='hover:text-gray-400'>
               <a className={styles.navlink} href='reviews'>Reviews</a>
             </li>
-            <li className={styles.navbar}>
+            <li className='hover:text-gray-400'>
               <a className={styles.navlink} href='interviews'>Interviews</a>
             </li>
           </ul>
