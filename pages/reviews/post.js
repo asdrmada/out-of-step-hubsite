@@ -40,7 +40,7 @@ function reviewsPost() {
       </div>
 
       <main>
-        <div className=''>
+        <div className={styles.main}>
             <h1>Post Title</h1>
 
             <h4>Opening paragraph</h4>

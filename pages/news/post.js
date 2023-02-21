@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
 
 function newsPost() {
@@ -40,25 +41,23 @@ function newsPost() {
       </div>
 
       <main>
-        <div className=''>
-            <h1>Post Title</h1>
+        <div className='container-l p-9'>
+            <h1 className='text-7xl my-6'>Post Title</h1>
 
-            <h4>Opening paragraph</h4>
+            <h4 className='text-3xl my-4'>Opening paragraph</h4>
 
-            <p>
+            <p className='my-4'>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas sed tempus urna.
-               Ut faucibus pulvinar elementum integer enim neque volutpat. Vel facilisis volutpat est velit egestas dui id. Sed blandit libero volutpat sed cras. Ornare suspendisse sed nisi lacus sed viverra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim.
-               Condimentum lacinia quis vel eros donec ac. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Mattis vulputate enim nulla aliquet. Arcu felis bibendum ut tristique et egestas quis ipsum. Eget nullam non nisi est sit amet facilisis magna etiam. Viverra vitae congue eu consequat ac felis donec et odio.
-
-               Commodo odio aenean sed adipiscing diam donec adipiscing. Non curabitur gravida arcu ac tortor. At quis risus sed vulputate odio ut enim blandit.
-               Consequat nisl vel pretium lectus quam. Egestas congue quisque egestas diam in arcu cursus. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Arcu felis bibendum ut tristique et. Convallis a cras semper auctor neque vitae tempus. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit.
-               Faucibus a pellentesque sit amet porttitor eget dolor. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Blandit volutpat maecenas volutpat blandit. Lectus mauris ultrices eros in. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi.
-
-               Sed sed risus pretium quam vulputate dignissim. Eu augue ut lectus arcu bibendum at. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Sollicitudin nibh sit amet commodo nulla facilisi. Nam libero justo laoreet sit amet cursus sit amet. Sagittis vitae et leo duis ut diam quam nulla.
-               Morbi blandit cursus risus at. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Massa sed elementum tempus egestas sed sed risus pretium quam. Cras pulvinar mattis nunc sed. Mi quis hendrerit dolor magna eget est lorem ipsum. Ultricies mi eget mauris pharetra et. Sed arcu non odio euismod lacinia at quis risus.
-               Magna sit amet purus gravida quis blandit turpis cursus in. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. In nisl nisi scelerisque eu ultrices vitae auctor eu. Nunc non blandit massa enim nec. Quam quisque id diam vel quam elementum pulvinar etiam non. Ornare aenean euismod elementum nisi quis eleifend quam.
+               Ut faucibus pulvinar elementum integer enim neque volutpat. Vel facilisis volutpat est velit egestas dui id. Sed blandit libero volutpat sed cras.
+               Ornare suspendisse sed nisi lacus sed viverra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim.
+               Condimentum lacinia quis vel eros donec ac. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Mattis vulputate enim nulla aliquet. Arcu felis bibendum ut tristique et egestas quis ipsum. 
+               Eget nullam non nisi est sit amet facilisis magna etiam.
+               
+               Viverra vitae congue eu consequat ac felis donec et odio.
+               
             </p>
 
+            <Link href='/news'><h3 className='text-xl underline'>Back too News?</h3></Link>
         </div>
       </main>
    

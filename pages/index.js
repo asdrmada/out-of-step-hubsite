@@ -40,7 +40,7 @@ export default function Home() {
       </div>
 
       <main className={styles.main}>
-        <card className='w-2/3 h-30 m-5 p-3 border border-black right-auto'>
+        <card className='w-2/3 h-30 m-5 p-3 shadow border border-black right-auto'>
         <div>
           <h2 className='text-3xl font-semibold'>Post title, innit!</h2>
           <br className='grey'></br>
