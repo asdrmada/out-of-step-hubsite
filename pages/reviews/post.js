@@ -2,6 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 
+import { LoremIpsum } from "lorem-ipsum"
+// const LoremIpsum = require("lorem-ipsum").LoremIpsum;
+
+const lorem  = new LoremIpsum({
+  sentencesPerParagraph: {
+    max: 8,
+    min: 3
+  },
+
+  wordsPerSentencs: {
+    max:10, 
+    min: 2
+  }
+ })
+
 function reviewsPost() {
     return(
         <div className={styles.container}>
@@ -43,7 +58,13 @@ function reviewsPost() {
         <div className={styles.main}>
             <h1>Post Title</h1>
 
-            <h4>Opening paragraph</h4>
+            <h4 className='text-3xl my-4'>
+              {lorem.generateSentences(6)}
+            </h4>
+
+            <p className='my-4 whitespace-pre-line break-all'>              
+             {lorem.generateParagraphs(5)}  
+            </p>
 
         </div>
       </main>

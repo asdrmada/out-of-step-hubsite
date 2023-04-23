@@ -3,6 +3,21 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
 
+import { LoremIpsum } from "lorem-ipsum"
+// const LoremIpsum = require("lorem-ipsum").LoremIpsum;
+
+const lorem  = new LoremIpsum({
+  sentencesPerParagraph: {
+    max: 8,
+    min: 3
+  },
+
+  wordsPerSentencs: {
+    max:10, 
+    min: 2
+  }
+ })
+
 function newsPost() {
     return(
         <div className={styles.container}>
@@ -44,17 +59,12 @@ function newsPost() {
         <div className='container-l p-9'>
             <h1 className='text-7xl my-6'>Post Title</h1>
 
-            <h4 className='text-3xl my-4'>Opening paragraph</h4>
+            <h4 className='text-3xl my-4'>
+              {lorem.generateSentences(6)}
+            </h4>
 
-            <p className='my-4'>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas sed tempus urna.
-               Ut faucibus pulvinar elementum integer enim neque volutpat. Vel facilisis volutpat est velit egestas dui id. Sed blandit libero volutpat sed cras.
-               Ornare suspendisse sed nisi lacus sed viverra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim.
-               Condimentum lacinia quis vel eros donec ac. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Mattis vulputate enim nulla aliquet. Arcu felis bibendum ut tristique et egestas quis ipsum. 
-               Eget nullam non nisi est sit amet facilisis magna etiam.
-               
-               Viverra vitae congue eu consequat ac felis donec et odio.
-               
+            <p className='my-4 whitespace-pre-line break-all'>              
+             {lorem.generateParagraphs(5)}  
             </p>
 
             <Link href='/news'><h3 className='text-xl underline'>Back too News?</h3></Link>
